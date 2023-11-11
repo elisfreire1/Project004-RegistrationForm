@@ -16,12 +16,17 @@
                 <label for="email">Enter Your Email: <input id="email" type="email" required></label>
                 <label for="new-password">Create a New Password: <input id="new-password" type="password" required pattern="[a-z0-5]{8,}"></label>
             </fieldset>
+
             <fieldset> <!-- define section2 -->
-
+                <legend>Account type (required)</legend> <!--Para prevenir o envio do radio sem ser checked. Adicionar required nesses casos dá erro, por isso Checked em um-->
+                <label for="personal-account"><input type="radio" name="account-type" checked id="personal-account"/> Personal</label>
+                <label for="business-account"><input type="radio" name="account-type" id="business-account"/> Busines</label>
             </fieldset>
+
             <fieldset> <!-- define section3 -->
-
+                
             </fieldset>
+
             <input type="submit" value="Submit">
         </form>
     </body>
