@@ -39,3 +39,9 @@ input, textarea, select{
     width: 100%; /*Para ocuparem a width toda e não ficar ao lado do texto*/
     margin: 10px 0 0 0;
 }
+
+.inline{
+    width: unset; /*This "unset" will remove the earlier rule which set all the "input" elements to width:100% */
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
